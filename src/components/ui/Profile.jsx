@@ -7,7 +7,7 @@ import { DiCodeigniter, DiAndroid, DiWebplatform } from 'react-icons/di'
 
 function Profile() {
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:1000px)");
 
 
     return (

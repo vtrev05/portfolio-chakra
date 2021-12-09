@@ -1,22 +1,32 @@
 import React from 'react'
-import { IconButton } from "@chakra-ui/button";
-import { useColorMode } from "@chakra-ui/color-mode";
-import { Flex, VStack, Spacer } from "@chakra-ui/layout";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { Link, Routes, Route, HashRouter } from "react-router-dom";
 
-const Header = () => {
-    const { colorMode, toggleColorMode } = useColorMode(); 
-    const isDark = colorMode === "dark";
+import Home from '../../pages/Home'
+import About from '../../pages/About'
+import Contact from '../../pages/Contact'
+import Portfolio from '../../pages/Portfolio'
+
+import './Nav.css'
+const Nav = () => {
     return (
-    <VStack>
-        <Flex w="100%">
-            <Spacer></Spacer>
-            <IconButton mt="5" mr="5" ml={9} icon={isDark ? <FaSun /> : <FaMoon />} 
-            isRound="true" onClick={toggleColorMode}></IconButton>
-           
-        </Flex>
-    </VStack>
+        <div class="container cyan brackets">
+        <HashRouter>
+            <Link to="/">
+                Home
+            </Link>
+            <Link to="/about">About</Link>
+            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/contact">Contact</Link>
+        
+        <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/contact/*" element={<Contact />} />
+            <Route path="/about/*" element={<About />} />
+            <Route path="/portfolio/*" element={<Portfolio />} />
+        </Routes>
+        </HashRouter>
+        </div>
     )
 }
 
-export default Header
+export default Nav

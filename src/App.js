@@ -1,13 +1,11 @@
+import ToggleButton from "./components/ui/ToggleButton";
 import Nav from "./components/ui/Nav";
-import Info from "./components/ui/Info"; 
-import Header from "./components/ui/Header";
 
 function App() {
   return (
     <>
+    <ToggleButton></ToggleButton>
     <Nav></Nav>
-    <Header></Header>
-    <Info></Info>
     </>
   );
 }
