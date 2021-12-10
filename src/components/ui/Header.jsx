@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Image } from "@chakra-ui/image";
-import { Stack, Flex, Box, Text, Center } from "@chakra-ui/layout";
+import { Stack, Flex, Box, Text } from "@chakra-ui/layout";
 import { useMediaQuery } from "@chakra-ui/media-query";
 import Icon from "@chakra-ui/icon";
 import { FaGithub, FaLinkedin } from "react-icons/fa";

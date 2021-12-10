@@ -1,10 +1,11 @@
 import React from 'react'
+import ContactInfo from '../components/ui/ContactInfo'
 
 const Contact = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <ContactInfo></ContactInfo>
+        </>
     )
 }
 
