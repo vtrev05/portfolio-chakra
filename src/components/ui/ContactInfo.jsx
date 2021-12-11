@@ -4,6 +4,7 @@ import { useMediaQuery } from "@chakra-ui/media-query";
 import { FaGithub, FaLinkedin, FaEnvelopeOpen, FaPhone } from "react-icons/fa";
 import {
   Flex,
+  Image,
   Text,
   Button,
   Box,
@@ -17,16 +18,28 @@ import {
 } from "@chakra-ui/react";
 
 const ContactInfo = () => {
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:1000px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
   return (
     <>
-      <Box mt={"200px"} alignSelf="center" px="32" py="16">
-      <Text mb={"20px"} fontSize="4xl">Puedes contactar conmigo a través de las siguientes vías:</Text>
-        <Flex
+      <Box alignSelf="center" py="16">
+      <Image
+              boxSize={isNotSmallerScreen ? "50%" : "100%"}
+              margin={"0 auto"}
+              borderRadius="5px"
+              src="https://assets-global.website-files.com/5f4f67c5950db17954dd4f52/5f5b74f79bd6983b85d41918_06_CONTACTO_VIVUS.jpeg"
+              alt="contact image"
+              _hover={{ opacity: "70%" }}
+            />
+      <Text 
+      mt={"40px"} 
+      mb={"20px"}
+      fontSize={isNotSmallerScreen ? "4xl" : "2xl"}>
+      Puedes contactar conmigo a través de las siguientes vías:
+      </Text>
+      <Flex
           justifyContent={"center"}
           wrap={"wrap"}
-          direction={isNotSmallerScreen ? "row" : "column"}
           mt={8}
         >
           <Flex>

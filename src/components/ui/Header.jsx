@@ -37,9 +37,6 @@ const Header = () => {
           <Text fontSize="3xl" color={isLight ? "gray.200" : "gray.500"}>
             FullStack Developer based in Madrid.
           </Text>
-          {/*    <Button mt={8} colorScheme="purple" onClick={() =>
-                        window.open("https://formula1s.netlify.app/")
-                    }>Main project</Button> */}
           <Button
             mt={8}
             borderRadius={100}
@@ -68,7 +65,7 @@ const Header = () => {
           alignSelf="center"
           mt={isNotSmallerScreen ? "0" : "12"}
           mb={isNotSmallerScreen ? "5" : "12"}
-          ml="10"
+          ml={isNotSmallerScreen ? "10" : "0"}
           borderRadius="full"
           backgroundColor="transparent"
           boxSize="300px"

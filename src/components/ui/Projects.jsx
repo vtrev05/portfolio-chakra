@@ -3,6 +3,7 @@ import { useMediaQuery } from "@chakra-ui/media-query";
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import Icon from "@chakra-ui/icon";
 import { DiReact, DiAngularSimple, DiCss3 } from "react-icons/di";
+import './Project.css'
 import {
   Image,
   Button,
@@ -18,7 +19,7 @@ import {
 } from "@chakra-ui/react";
 
 const Projects = () => {
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:1000px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:700px)");
   const { isOpen, onOpen, onClose } = useDisclosure();
   const {
     isOpen: isDeleteOpen,
@@ -48,20 +49,25 @@ const Projects = () => {
 
   return (
     <>
-      <Box alignSelf="center" px="32" py="16">
+      <Box alignSelf="center" py="16">
+      <Text
+      w="100%"
+      m="40px 0 20px"
+      fontSize={isNotSmallerScreen ? "4xl" : "2xl"}>
+      Estos son algunos de mis mejores proyectos:
+      </Text>
         <Flex
+          w="100%"
+          margin={"0 auto"}
           wrap={"wrap"}
           direction={isNotSmallerScreen ? "row" : "column"}
           mt={8}
         >
           <Flex
             rounded="xl"
-            direction="column"
-            mt={4}
-            ml={isNotSmallerScreen ? 4 : 0}
+            margin={"14px auto"}
             bg="gray.400"
-            w="50vh"
-            justify="flex-end"
+            w={isNotSmallerScreen ? "45vw" : "90vw"}
             _hover={{ bg: "#e10600" }}
           >
             <Image
@@ -106,13 +112,9 @@ const Projects = () => {
 
           <Flex
             rounded="xl"
-            direction="column"
-            mt={4}
-            ml={isNotSmallerScreen ? 4 : 0}
+            margin={"14px auto"}
             bg="gray.400"
-            h="35vh"
-            w="50vh"
-            justify="flex-end"
+            w={isNotSmallerScreen ? "45vw" : "90vw"}
             _hover={{ bg: "#318324" }}
           >
             <Image
@@ -160,13 +162,10 @@ const Projects = () => {
 
           <Flex
             rounded="xl"
-            direction="column"
-            mt={4}
-            ml={isNotSmallerScreen ? 4 : 0}
+            margin={"14px auto"}
             bg="gray.400"
-            h="35vh"
-            w="50vh"
-            justify="flex-end"
+            w={isNotSmallerScreen ? "45vw" : "90vw"}
+            maxHeight={"322px"}
             _hover={{ bg: "#2b7489" }}
           >
             <Image
@@ -216,13 +215,10 @@ const Projects = () => {
 
           <Flex
             rounded="xl"
-            direction="column"
-            mt={4}
-            ml={isNotSmallerScreen ? 4 : 0}
+            margin={"14px auto"}
             bg="gray.400"
-            h="35vh"
-            w="50vh"
-            justify="flex-end"
+            w={isNotSmallerScreen ? "45vw" : "90vw"}
+            maxHeight={"322px"}
             _hover={{ bg: "rgb(225 31 31)" }}
           >
             <Image
@@ -276,13 +272,9 @@ const Projects = () => {
 
           <Flex
             rounded="xl"
-            direction="column"
-            mt={4}
-            ml={isNotSmallerScreen ? 4 : 0}
+            margin={"14px auto"}
             bg="gray.400"
-            h="35vh"
-            w="50vh"
-            justify="flex-end"
+            w={isNotSmallerScreen ? "45vw" : "90vw"}
             _hover={{ bg: "skyblue" }}
           >
             <Image
@@ -336,13 +328,9 @@ const Projects = () => {
 
           <Flex
             rounded="xl"
-            direction="column"
-            mt={4}
-            ml={isNotSmallerScreen ? 4 : 0}
+            margin={"14px auto"}
             bg="gray.400"
-            h="35vh"
-            w="50vh"
-            justify="flex-end"
+            w={isNotSmallerScreen ? "45vw" : "90vw"}
             _hover={{ bg: "blue" }}
           >
             <Image

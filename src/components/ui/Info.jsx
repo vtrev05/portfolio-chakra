@@ -12,6 +12,7 @@ const Span = styled.span`
 
 const Info = () => {
     const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+    const [image] = useMediaQuery("(min-width:900px)")
 
     return (
         <>
@@ -24,16 +25,19 @@ const Info = () => {
         <Image 
            mt={isNotSmallerScreen ? "8" : "12"}
            mb={isNotSmallerScreen ? "5" : "12"}
+           display={image ? "inline-block" : "none"}
            position={"absolute"}
-           left={"250px"}
-           boxSize='300px'
+           right={"250px"}
+           top={"160px"}
+           boxSize='240px'
            borderRadius="full"
            objectFit='cover'
-           display={"inline-block"}
            src="https://i.imgur.com/0KzPXH9.jpeg" alt="" />
         <Container
-        position={"relative"}
-        left={"140px"}>
+        /* position={isNotSmallerScreen ? "relative" : "initial"} */
+        textAlign={isNotSmallerScreen ? "left" : "left"}
+        mb={"40px"}
+        /* left={"140px"} */>
             <Text  fontSize="5xl" fontWeight="semibold">
             Víctor Trevijano
             </Text>
@@ -46,7 +50,7 @@ const Info = () => {
             <Text mt={"20px"} fontSize="2xl" fontWeight="semibold">
             <Icon as={FaArrowRight} boxSize="4" color={"#3182ce"} mr={"10px"}></Icon><Span>City:</Span> Madrid, Spain
             </Text>
-            <Text lineHeight={2.25} mt={"20px"} fontSize="lg" fontWeight="semibold">
+            <Text lineHeight={2.25} mt={"20px"} fontSize="lg">
             Mi carrera profesional se ha formado en el mundo empresarial, lo
             que me ha posibilitado aprender el funcionamiento de la empresa
             desde diferentes perspectivas y áreas.
@@ -56,11 +60,11 @@ const Info = () => {
             </Text>
         </Container>
         </Flex>
-        <Container p="0">
+        <Container>
             <Text color={"#3182ce"} fontSize={"4xl"} textAlign={"left"}>Studies</Text>
             <Text textDecoration={"underline"} mt={"20px"} fontSize="2xl" fontWeight="semibold" textAlign={"left"}>Upgrade-Hub</Text>
             <Text  mt={"20px"} fontSize="lg" fontStyle={"italic"} fontWeight="200" textAlign={"left"}>Curso intensivo de Desarrollo Full-Stack // 2021</Text>
-            <Text lineHeight={"1.75"} mt={"20px"} fontSize="lg" fontWeight="semibold" textAlign={"left"}>
+            <Text lineHeight={"1.75"} mt={"20px"} fontSize="lg"  textAlign={"left"}>
                 Uso profesional de tecnologías tanto front-end como back-end. Entre ellas destacan React y Angular como principales frameworks/librerías de front basadas en Javascript. Además, en back he podido aprender bases de datos SQL y NOSQL. 
             </Text>
             <Text textDecoration={"underline"} mt={"20px"} fontSize="2xl" fontWeight="semibold" textAlign={"left"}>Universidad Rey Juan Carlos</Text>
