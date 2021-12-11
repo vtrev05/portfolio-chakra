@@ -15,6 +15,21 @@
     "info.studies.urjc.title": "Universidad Rey Juan Carlos",
     "info.studies.urjc.ade": "Business Administration and Management Degree // 2014-2020",
     "info.studies.urjc.cau": "Audiovisual Communication Degree // 2014-2020",
-    "projects.title": "These are some of my best projects:"
+    "projects.title": "These are some of my best projects:",
+    "projects.f1.body": "Public API 100% functional. Made with React, React Intl, styled components, Auth0, mdx for code... This is my best project!",
+    "projects.close": "Close",
+    "projects.jungle.title": "This is the Jungle!",
+    "projects.jungle.body": "Complete project, including Backend and Frontend. Based on animal themes, this project includes collections of habitats, animals and animal families. The back is made with Nodejs and Mongo, and for the front part I used React. It includes several libraries to work with maps, authentication, sending emails...",
+    "projects.jungle.subtitle": "Jungle Project",
+    "projects.christmas.title": "Christmas Letter",
+    "projects.christmas.body": "Application developed with Angular. Letter to the Three Wise Men designed to work with the exchange of information in Angular between parents and children. Several models of interchangeable letter with buttons. Perfect for Christmas times!",
+    "projects.nba.title": "NBA App",
+    "projects.nba.body": "Application made with Angular in its front part, and the data from two different APISs were taken, one that contained data on teams and another of its own, made with Nodejs and Mongo, which collected information on the players of the 2008 NBA finals played between the Boston Celtics and the Los Angeles Lakers.",
+    "projects.frontend.title": "Front-end Mentor",
+    "projects.frontend.body": "Front-end Mentor is a website that contains different leveled challenges available for anyone who wants to face them. They have a large community that supports and gives useful advice to other users. The 7 challenges that I have completed to date are available on my github account !",
+    "projects.rick.body": "Rick & Morty API application. It is developed with Angular and the data taken entirely from the API.",
+    "contact.text": "You can contact with me here: ",
+    "contact.email": "Email Account:",
+    "contact.telephone": "Telephone number:"
     
 }

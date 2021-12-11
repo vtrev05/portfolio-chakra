@@ -15,5 +15,19 @@
     "info.studies.urjc.title": "Universidad Rey Juan Carlos",
     "info.studies.urjc.ade": "Grado en Administración y Dirección de Empresas // 2014-2020",
     "info.studies.urjc.cau": "Grado en Comunicación Audiovisual // 2014-2020",
-    "projects.title": "Estos son algunos de mis mejores proyectos:"
+    "projects.title": "Estos son algunos de mis mejores proyectos:",
+    "projects.f1.body": "API pública 100% funcional. Hecha con React, React Intl, styled components, Auth0, mdx para la inserción de código... Mi mejor proyecto junto a dos increíbles desarrolladores.",
+    "projects.close": "Cerrar",
+    "projects.jungle.title": "¡Esto es la jungla!",
+    "projects.jungle.body": "Proyecto completo, tanto parte Backend como Frontend. Basado en temática animal, incluyendo colecciones de hábitats, animales y familias de animales. El back está hecho con Nodejs y Mongo, y para la parte front usé React. Incluye varias librerías para trabajar con mapas, autenticación, envío de emails...",
+    "projects.jungle.subtitle": "Proyecto de Jungla",
+    "projects.christmas.title": "Carta navidad",
+    "projects.christmas.body": "Aplicación desarrollada con Angular. Carta a los Reyes Magos pensada para trabajar con el intercambio de información en Angular entre padres e hijos. Varios modelos de carta intercambiable con botones. Perfecto para épocas navideñas!",
+    "projects.nba.title": "NBA App",
+    "projects.nba.body": "Aplicación hecha con Angular en su parte front, y cogidos los datos de dos APIS distintas, una que contenía datos sobre equipos y otra propia, hecha con Nodejs y Mongo, que recogía información sobre los jugadores de las finales de 2008 de la NBA disputadas entre los Boston Celtics y Los Ángeles Lakers.",
+    "projects.frontend.title": "Front-end Mentor",
+    "projects.frontend.body": "Front-end Mentor es una web que contiene diferentes retos nivelados disponibles para cualquiera que quiera enfrentarse a ellos Tienen una gran comunidad que apoya y da útiles consejos al resto de usuarios En mi cuenta de github están disponibles los 7 retos que he completado hasta la fecha!",
+    "projects.rick.body": "Aplicación sobre la API de Rick & Morty. Está desarrollada con Angular y los datos cogidos enteramente de la API.",
+    "contact.text": "Puedes contactar conmigo a través de las siguientes vías: ","contact.email": "Email:",
+    "contact.telephone": "Número de teléfono:"
 }

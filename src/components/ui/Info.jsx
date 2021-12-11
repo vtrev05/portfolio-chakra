@@ -13,7 +13,7 @@ const Span = styled.span`
 
 const Info = () => {
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
-  const [image] = useMediaQuery("(min-width:900px)");
+  const [image] = useMediaQuery("(min-width:1000px)");
 
   return (
     <>
@@ -27,8 +27,8 @@ const Info = () => {
           mt={isNotSmallerScreen ? "8" : "12"}
           mb={isNotSmallerScreen ? "5" : "12"}
           display={image ? "inline-block" : "none"}
-          position={"absolute"}
-          right={"250px"}
+          position={"fixed"}
+          right={"200px"}
           top={"160px"}
           boxSize="240px"
           borderRadius="full"

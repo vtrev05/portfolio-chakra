@@ -92,9 +92,13 @@ const Projects = () => {
                 <ModalCloseButton />
                 <ModalBody>
                   <Text mb={"20px"} fontSize="xl">
-                    Public API 100% functional. Made with React, React Intl,
-                    styled components, Auth0, mdx for code... This is my best
-                    project!
+                    <FormattedMessage
+                      id="projects.f1.body"
+                      defaultMessage="
+                      Public API 100% functional. Made with React, React Intl,
+                      styled components, Auth0, mdx for code... This is my best
+                      project!"
+                    />
                   </Text>
                   <Icon alignSelf={"center"} as={DiReact} p="4" w="24" h="24" />
                   <Link
@@ -109,7 +113,10 @@ const Projects = () => {
 
                 <ModalFooter>
                   <Button colorScheme="blue" mr={3} onClick={onClose}>
-                    Close
+                    <FormattedMessage
+                      id="projects.close"
+                      defaultMessage=" Close"
+                    />
                   </Button>
                 </ModalFooter>
               </ModalContent>
@@ -135,16 +142,19 @@ const Projects = () => {
             <Modal isOpen={isDeleteOpen} onClose={onDeleteClose}>
               <ModalOverlay />
               <ModalContent>
-                <ModalHeader color={"#318324"}>This is the Jungle!</ModalHeader>
+                <ModalHeader color={"#318324"}>
+                  <FormattedMessage
+                    id="projects.jungle.title"
+                    defaultMessage="This is the Jungle!"
+                  />
+                </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>
                   <Text lineHeight={1.75} mb={"20px"} fontSize="xl">
-                    Proyecto completo, tanto parte Backend como Frontend. Basado
-                    en temática animal, incluyendo colecciones de hábitats,
-                    animales y familias de animales. El back está hecho con
-                    Nodejs y Mongo, y para la parte front usé React. Incluye
-                    varias librerías para trabajar con mapas, autenticación,
-                    envío de emails...
+                    <FormattedMessage
+                      id="projects.jungle.body"
+                      defaultMessage="Complete project, including Backend and Frontend. Based on animal themes, this project includes collections of habitats, animals and animal families. The back is made with Nodejs and Mongo, and for the front part I used React. It includes several libraries to work with maps, authentication, sending emails..."
+                    />
                   </Text>
                   <Icon alignSelf={"center"} as={DiReact} p="4" w="24" h="24" />
                   <Link
@@ -153,13 +163,19 @@ const Projects = () => {
                     href="https://github.com/vtrev05/Jungle-Frontend"
                     isExternal
                   >
-                    Jungle Project
+                    <FormattedMessage
+                      id="projects.jungle.subtitle"
+                      defaultMessage="Jungle Project"
+                    />
                   </Link>
                 </ModalBody>
 
                 <ModalFooter>
                   <Button colorScheme="blue" mr={3} onClick={onDeleteClose}>
-                    Close
+                    <FormattedMessage
+                      id="projects.close"
+                      defaultMessage=" Close"
+                    />
                   </Button>
                 </ModalFooter>
               </ModalContent>
@@ -171,7 +187,7 @@ const Projects = () => {
             margin={"14px auto"}
             bg="gray.400"
             w={isNotSmallerScreen ? "45vw" : "90vw"}
-            maxHeight={"322px"}
+            maxHeight={"380px"}
             _hover={{ bg: "#2b7489" }}
           >
             <Image
@@ -190,8 +206,10 @@ const Projects = () => {
                 <ModalCloseButton />
                 <ModalBody>
                   <Text lineHeight={1.75} mb={"20px"} fontSize="xl">
-                    Aplicación sobre la API de Rick & Morty. Está desarrollada
-                    con Angular y los datos cogidos enteramente de la API.
+                    <FormattedMessage
+                      id="projects.rick.body"
+                      defaultMessage="Rick & Morty API application. It is developed with Angular and the data taken entirely from the API."
+                    />
                   </Text>
                   <Icon
                     alignSelf={"center"}
@@ -212,7 +230,10 @@ const Projects = () => {
 
                 <ModalFooter>
                   <Button colorScheme="blue" mr={3} onClick={onEditClose}>
-                    Close
+                    <FormattedMessage
+                      id="projects.close"
+                      defaultMessage="Close"
+                    />
                   </Button>
                 </ModalFooter>
               </ModalContent>
@@ -224,7 +245,7 @@ const Projects = () => {
             margin={"14px auto"}
             bg="gray.400"
             w={isNotSmallerScreen ? "45vw" : "90vw"}
-            maxHeight={"322px"}
+            maxHeight={"380px"}
             _hover={{ bg: "rgb(225 31 31)" }}
           >
             <Image
@@ -240,15 +261,19 @@ const Projects = () => {
               <ModalOverlay />
               <ModalContent>
                 <ModalHeader color={"rgb(225 31 31)"}>
-                  Christmas Letter
+                  <FormattedMessage
+                    id="projects.christmas.title"
+                    defaultMessage="Christmas Letter"
+                  />
                 </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>
                   <Text lineHeight={1.75} mb={"20px"} fontSize="xl">
-                    Aplicación desarrollada con Angular. Carta a los Reyes Magos
-                    pensada para trabajar con el intercambio de información en
-                    Angular entre padres e hijos. Varios modelos de carta
-                    intercambiable con botones. Perfecto para épocas navideñas!
+                    <FormattedMessage
+                      id="projects.christmas.body"
+                      defaultMessage="Application developed with Angular. Letter to the Three Wise Men designed to work with the exchange of information in Angular between parents and children. Several models of interchangeable letter with buttons. Perfect for Christmas times!
+                      "
+                    />
                   </Text>
                   <Icon
                     alignSelf={"center"}
@@ -263,13 +288,19 @@ const Projects = () => {
                     href="https://christmas-letter-angular-oyr93frof-vtrev05.vercel.app/"
                     isExternal
                   >
-                    Christmas Letter
+                    <FormattedMessage
+                      id="projects.christmas.title"
+                      defaultMessage="Christmas Letter"
+                    />
                   </Link>
                 </ModalBody>
 
                 <ModalFooter>
                   <Button colorScheme="blue" mr={3} onClick={onEditClose2}>
-                    Close
+                    <FormattedMessage
+                      id="projects.close"
+                      defaultMessage="Close"
+                    />
                   </Button>
                 </ModalFooter>
               </ModalContent>
@@ -295,16 +326,19 @@ const Projects = () => {
             <Modal isOpen={isEditOpen3} onClose={onEditClose3}>
               <ModalOverlay />
               <ModalContent>
-                <ModalHeader color={"skyblue"}>NBA App</ModalHeader>
+                <ModalHeader color={"skyblue"}>
+                  <FormattedMessage
+                    id="projects.nba.title"
+                    defaultMessage="NBA App"
+                  />
+                </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>
                   <Text lineHeight={1.75} mb={"20px"} fontSize="xl">
-                    Aplicación hecha con Angular en su parte front, y cogidos
-                    los datos de dos APIS distintas, una que contenía datos
-                    sobre equipos y otra propia, hecha con Nodejs y Mongo, que
-                    recogía información sobre los jugadores de las finales de
-                    2008 de la NBA disputadas entre los Boston Celtics y Los
-                    Ángeles Lakers.
+                    <FormattedMessage
+                      id="projects.nba.body"
+                      defaultMessage="Application made with Angular in its front part, and the data from two different APISs were taken, one that contained data on teams and another of its own, made with Nodejs and Mongo, which collected information on the players of the 2008 NBA finals played between the Boston Celtics and the Los Angeles Lakers."
+                    />
                   </Text>
                   <Icon
                     alignSelf={"center"}
@@ -319,13 +353,19 @@ const Projects = () => {
                     href="https://github.com/vtrev05/NBA-App"
                     isExternal
                   >
-                    NBA App
+                    <FormattedMessage
+                      id="projects.nba.title"
+                      defaultMessage="NBA App"
+                    />
                   </Link>
                 </ModalBody>
 
                 <ModalFooter>
                   <Button colorScheme="blue" mr={3} onClick={onEditClose3}>
-                    Close
+                    <FormattedMessage
+                      id="projects.close"
+                      defaultMessage="Close"
+                    />
                   </Button>
                 </ModalFooter>
               </ModalContent>
@@ -352,16 +392,18 @@ const Projects = () => {
               <ModalOverlay />
               <ModalContent>
                 <ModalHeader color={"cyan"}>
-                  Front-end Mentor Challenges
+                  <FormattedMessage
+                    id="projects.frontend.title"
+                    defaultMessage="Front-end Mentor"
+                  />
                 </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>
                   <Text lineHeight={1.75} mb={"20px"} fontSize="xl">
-                    Front-end Mentor es una web que contiene diferentes retos
-                    nivelados disponibles para cualquiera que quiera enfrentarse
-                    a ellos. Tienen una gran comunidad que apoya y da útiles
-                    consejos al resto de usuarios. En mi cuenta de github están
-                    disponibles los 7 retos que he completado hasta la fecha!
+                    <FormattedMessage
+                      id="projects.frontend.body"
+                      defaultMessage="Front-end Mentor is a website that contains different leveled challenges available for anyone who wants to face them. They have a large community that supports and gives useful advice to other users. The 7 challenges that I have completed to date are available on my github account !"
+                    />
                   </Text>
                   <Icon alignSelf={"center"} as={DiCss3} p="4" w="24" h="24" />
                   <Link
@@ -370,13 +412,20 @@ const Projects = () => {
                     href="https://github.com/vtrev05?tab=repositories"
                     isExternal
                   >
-                    Front Mentor
+                    <FormattedMessage
+                      id="projects.frontend.title"
+                      defaultMessage="Front-end Mentor"
+                    />
                   </Link>
                 </ModalBody>
 
                 <ModalFooter>
                   <Button colorScheme="blue" mr={3} onClick={onEditClose4}>
-                    Close
+                    <FormattedMessage
+                      id="projects.close"
+                      defaultMessage="
+                      Close"
+                    />
                   </Button>
                 </ModalFooter>
               </ModalContent>

@@ -1,6 +1,7 @@
 import React from "react";
 import Icon from "@chakra-ui/icon";
 import { useMediaQuery } from "@chakra-ui/media-query";
+import { FormattedMessage } from "react-intl";
 import { FaGithub, FaLinkedin, FaEnvelopeOpen, FaPhone } from "react-icons/fa";
 import {
   Flex,
@@ -23,25 +24,25 @@ const ContactInfo = () => {
   return (
     <>
       <Box alignSelf="center" py="16">
-      <Image
-              boxSize={isNotSmallerScreen ? "50%" : "100%"}
-              margin={"0 auto"}
-              borderRadius="5px"
-              src="https://assets-global.website-files.com/5f4f67c5950db17954dd4f52/5f5b74f79bd6983b85d41918_06_CONTACTO_VIVUS.jpeg"
-              alt="contact image"
-              _hover={{ opacity: "70%" }}
-            />
-      <Text 
-      mt={"40px"} 
-      mb={"20px"}
-      fontSize={isNotSmallerScreen ? "4xl" : "2xl"}>
-      Puedes contactar conmigo a través de las siguientes vías:
-      </Text>
-      <Flex
-          justifyContent={"center"}
-          wrap={"wrap"}
-          mt={8}
+        <Image
+          boxSize={isNotSmallerScreen ? "50%" : "100%"}
+          margin={"0 auto"}
+          borderRadius="5px"
+          src="https://assets-global.website-files.com/5f4f67c5950db17954dd4f52/5f5b74f79bd6983b85d41918_06_CONTACTO_VIVUS.jpeg"
+          alt="contact image"
+          _hover={{ opacity: "70%" }}
+        />
+        <Text
+          mt={"40px"}
+          mb={"20px"}
+          fontSize={isNotSmallerScreen ? "4xl" : "2xl"}
         >
+          <FormattedMessage
+            id="contact.text"
+            defaultMessage="You can contact with me here:"
+          />
+        </Text>
+        <Flex justifyContent={"center"} wrap={"wrap"} mt={8}>
           <Flex>
             <Button
               mt={8}
@@ -81,10 +82,13 @@ const ContactInfo = () => {
               <PopoverContent>
                 <PopoverArrow />
                 <PopoverCloseButton />
-                <PopoverHeader>Email Account:</PopoverHeader>
-                <PopoverBody>
-                  v.trevijano@gmail.com
-                </PopoverBody>
+                <PopoverHeader>
+                <FormattedMessage
+            id="contact.email"
+            defaultMessage="Email Account:"
+          />
+          </PopoverHeader>
+                <PopoverBody>v.trevijano@gmail.com</PopoverBody>
               </PopoverContent>
             </Popover>
 
@@ -102,10 +106,11 @@ const ContactInfo = () => {
               <PopoverContent>
                 <PopoverArrow />
                 <PopoverCloseButton />
-                <PopoverHeader>Telephone number: </PopoverHeader>
-                <PopoverBody>
-                  +34 675273617
-                </PopoverBody>
+                <PopoverHeader><FormattedMessage
+            id="contact.telephone"
+            defaultMessage="Telephone number: "
+          /> </PopoverHeader>
+                <PopoverBody>+34 675273617</PopoverBody>
               </PopoverContent>
             </Popover>
           </Flex>
