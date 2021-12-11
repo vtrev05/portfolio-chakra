@@ -1,0 +1,20 @@
+{
+    "header.salute": "Hi, I am",
+    "header.occupation": "FullStack Developer based in Madrid.",
+    "info.occupation": "Occupation: ",
+    "info.job": "FullStack Developer",
+    "info.birthday": "Birthday: ",
+    "info.birthday.day": "13/05/1996",
+    "info.city": "City: ",
+    "info.city.value": "Madrid, Spain",
+    "info.career": "My professional career has been formed in the business world, that has allowed me to learn how the company works from different perspectives and areas. My concern to continue learning made me start studying programming in a self-taught way in search of face new professional challenges.",
+    "info.studies.title": "Studies",
+    "info.studies.upgrade": "Upgrade-Hub",
+    "info.studies.upgrade.subtitle": "Intensive Full-Stack Development Course // 2021",
+    "info.studies.upgrade.body": "Professional use of both front-end and back-end technologies. React and Angular stand out as the main frameworks / libraries for the front-end based on Javascript. In addition, in the back I have been able to learn SQL and NOSQL databases.",
+    "info.studies.urjc.title": "Universidad Rey Juan Carlos",
+    "info.studies.urjc.ade": "Business Administration and Management Degree // 2014-2020",
+    "info.studies.urjc.cau": "Audiovisual Communication Degree // 2014-2020",
+    "projects.title": "These are some of my best projects:"
+    
+}

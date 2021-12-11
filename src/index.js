@@ -1,14 +1,15 @@
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import WrapperLang from '../src/context/WrapperLang';
 import App from './App';
    
  ReactDOM.render(
-  <React.StrictMode>
+  <WrapperLang>
    <ChakraProvider>
      <ColorModeScript initialColorMode="dark"></ColorModeScript>
    <App />
    </ChakraProvider>
-  </React.StrictMode>,
+  </WrapperLang>,
   document.getElementById('root')
 );

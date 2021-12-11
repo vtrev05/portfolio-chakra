@@ -1,0 +1,19 @@
+{
+    "header.salute": "¡Hola! Me llamo",
+    "header.occupation": "Soy Desarrollador Web FullStack en Madrid.",
+    "info.occupation": "Empleo: ",
+    "info.job": "Desarrollador Web FullStack",
+    "info.birthday": "Fecha de nacimiento: ",
+    "info.birthday.day": "13/05/1996",
+    "info.city": "Localización: ",
+    "info.city.value": "Madrid, España",
+    "info.career": "Mi carrera profesional se ha formado en el mundo empresarial, lo que me ha posibilitado aprender el funcionamiento de la empresa desde diferentes perspectivas y áreas. Mi inquietud por seguir aprendiendo me ha llevado a introducirme en el mundo de la programación de forma autodidacta en busca de afrontar nuevos retos profesionales.",
+    "info.studies.title": "Estudios",
+    "info.studies.upgrade": "Upgrade-Hub",
+    "info.studies.upgrade.subtitle": "Curso intensivo de Desarrollo Full-Stack // 2021",
+    "info.studies.upgrade.body": "Uso profesional de tecnologías tanto front-end como back-end. Entre ellas destacan React y Angular como principales frameworks/librerías de front basadas en Javascript. Además, en back he podido aprender bases de datos SQL y NOSQL.",
+    "info.studies.urjc.title": "Universidad Rey Juan Carlos",
+    "info.studies.urjc.ade": "Grado en Administración y Dirección de Empresas // 2014-2020",
+    "info.studies.urjc.cau": "Grado en Comunicación Audiovisual // 2014-2020",
+    "projects.title": "Estos son algunos de mis mejores proyectos:"
+}

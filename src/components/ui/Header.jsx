@@ -4,6 +4,7 @@ import { useColorMode } from "@chakra-ui/color-mode";
 import { Image } from "@chakra-ui/image";
 import { Stack, Flex, Box, Text } from "@chakra-ui/layout";
 import { useMediaQuery } from "@chakra-ui/media-query";
+import { FormattedMessage } from "react-intl";
 import Icon from "@chakra-ui/icon";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -24,7 +25,7 @@ const Header = () => {
       >
         <Box mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
           <Text fontSize="7xl" fontWeight="semibold">
-            Hi, I am
+          <FormattedMessage id="header.salute" defaultMessage="Hi, I am" />
           </Text>
           <Text
             fontSize="7xl"
@@ -35,7 +36,7 @@ const Header = () => {
             Víctor Trevijano
           </Text>
           <Text fontSize="3xl" color={isLight ? "gray.200" : "gray.500"}>
-            FullStack Developer based in Madrid.
+          <FormattedMessage id="header.occupation" defaultMessage="FullStack Developer based in Madrid." />
           </Text>
           <Button
             mt={8}

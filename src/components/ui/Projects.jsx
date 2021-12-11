@@ -3,7 +3,8 @@ import { useMediaQuery } from "@chakra-ui/media-query";
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import Icon from "@chakra-ui/icon";
 import { DiReact, DiAngularSimple, DiCss3 } from "react-icons/di";
-import './Project.css'
+import "./Project.css";
+import { FormattedMessage } from "react-intl";
 import {
   Image,
   Button,
@@ -50,12 +51,17 @@ const Projects = () => {
   return (
     <>
       <Box alignSelf="center" py="16">
-      <Text
-      w="100%"
-      m="40px 0 20px"
-      fontSize={isNotSmallerScreen ? "4xl" : "2xl"}>
-      Estos son algunos de mis mejores proyectos:
-      </Text>
+        <Text
+          w="100%"
+          m="40px 0 20px"
+          fontSize={isNotSmallerScreen ? "4xl" : "2xl"}
+        >
+          <FormattedMessage
+            id="projects.title"
+            defaultMessage="
+            These are some of my best projects:"
+          />
+        </Text>
         <Flex
           w="100%"
           margin={"0 auto"}
